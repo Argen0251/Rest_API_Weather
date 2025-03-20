@@ -40,7 +40,7 @@ object RetrofitClient {
     }
 
     @OptIn(ExperimentalSerializationApi::class)
-    val retrofitService: WeatherApiService by lazy {
+    val retrofitService:  WeatherApiService by lazy {
         Retrofit.Builder()
             // Создаём объект Retrofit для отправки запросов
             .baseUrl(BASE_URL)
